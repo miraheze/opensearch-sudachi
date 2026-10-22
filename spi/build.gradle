@@ -18,7 +18,7 @@ dependencies {
 }
 
 spotless {
-    ratchetFrom 'origin/develop'
+    ratchetFrom 'origin/main'
     encoding 'UTF-8' // all formats will be interpreted as UTF-8
     def formatter = rootProject.projectDir.toPath().resolve(".formatter")
 

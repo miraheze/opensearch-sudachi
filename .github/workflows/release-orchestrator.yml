@@ -43,7 +43,7 @@ jobs:
       if: github.event_name == 'push'
       run: |
         git fetch origin develop
-        git merge-base --is-ancestor "$GITHUB_SHA" origin/develop
+        git merge-base --is-ancestor "$GITHUB_SHA" origin/main
     - id: meta
       env:
         INPUT_RELEASE_TAG: ${{ inputs.release_tag }}
